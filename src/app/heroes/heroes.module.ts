@@ -14,6 +14,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ListadoComponent } from './pages/listado/listado.component';
 import { FlexModule } from '@angular/flex-layout';
 import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
+import { ImagenPipe } from './pipes/imagen.pipe';
 
 
 
@@ -25,6 +26,7 @@ import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.
     HomeComponent,
     ListadoComponent,
     HeroeTarjetaComponent,
+    ImagenPipe,
   ],
   imports: [CommonModule,
   FlexModule,
