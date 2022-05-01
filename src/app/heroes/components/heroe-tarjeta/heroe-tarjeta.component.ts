@@ -1,10 +1,14 @@
 import { Heroe } from './../../interfaces/heroes.interface';
 import { Component, Input } from '@angular/core';
 
+
 @Component({
   selector: 'app-heroe-tarjeta',
   templateUrl: './heroe-tarjeta.component.html',
-  styleUrls: []
+  styles: [`
+  mat-card{
+    margin-top:20px;
+  }`]
 })
 export class HeroeTarjetaComponent  {
 
@@ -12,7 +16,6 @@ export class HeroeTarjetaComponent  {
   //@Input() heroe: Heroe | undefined;
 
   constructor() { }
-
 
 
 }
