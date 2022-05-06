@@ -1,4 +1,4 @@
-import { environment } from './../../../environments/environment.prod';
+import { environment } from './../../../environments/environment';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
@@ -20,4 +20,11 @@ export class HeroesService {
   getHeroebyId(id: String): Observable<Heroe>{
     return this.http.get<Heroe>(`${ this.baseUrl }/heroes/${id}`);
   }
+
+  getSugerencias( termino: String ): Observable<Heroe[]>{
+    return this.http.get<Heroe[]>(`${ this.baseUrl }/heroes?q=${termino}&_limit=6`);
+  }
+
+
+
 }
